@@ -4,7 +4,7 @@ const config = require('../config.json');
 module.exports.run = async (client, message, args) => {
 
 const embed = new EmbedBuilder()
-.setTitle(`${client.user.username} Giveaway ✅✅✅✅✅✅✅🥳`)
+.setTitle(`${client.user.username} Giveaway ✅✅✅✅🥳`)
 .setColor('#e74c3c')
 .setDescription('**Hello everyone 👋 am Galileo islam i can help u to make the best giveaways in your server**')
 .addFields({ name: `Here are my social:`, value: `- [Server Support](https://discord.gg/galileo)\n- [Invite me](https://discord.com/api/oauth2/authorize?client_id=1005540872894554204&permissions=9395251377&scope=bot%20applications.commands)\n`, inline: true })
