@@ -43,12 +43,13 @@ module.exports = {
       type: ApplicationCommandOptionType.Integer,
       required: false
     },
-    {
+  /*  {
       name: 'invite',
       description: 'Invite of the server you want to add as giveaway joining requirement',
       type: ApplicationCommandOptionType.String,
       required: false
-    },
+    },*/
+    
     {
       name: 'role',
       description: 'Role you want to add as giveaway joining condition',
@@ -58,7 +59,7 @@ module.exports = {
   ],
 
   run: async (client, interaction) => {
-
+const image = "https://media.discordapp.net/attachments/1019719766803497020/1058037379518189599/Picsart_22-12-29_16-02-39-902.jpg";
     // If the member doesn't have enough permissions
     if (!interaction.member.permissions.has('MANAGE_MESSAGES') && !interaction.member.roles.cache.some((r) => r.name === "Giveaways")) {
       return interaction.reply({
@@ -148,6 +149,10 @@ module.exports = {
     client.giveawaysManager.start(giveawayChannel, {
       // The giveaway duration
       duration: ms(giveawayDuration),
+
+    // The Image Banner instead
+
+image: (image),
       // The giveaway prize
       prize: giveawayPrize,
       // The giveaway winner count

@@ -33,7 +33,8 @@ module.exports.run = async (client, message, args) => {
       ":x: You have to specify a valid number of winners!"
     );
   }
-
+// Provide The Image link 
+  const image = "https://media.discordapp.net/attachments/1019719766803497020/1058037379518189599/Picsart_22-12-29_16-02-39-902.jpg";
   // Giveaway prize
   let giveawayPrize = args.slice(3).join(" ");
   // If no prize is specified
@@ -46,6 +47,9 @@ module.exports.run = async (client, message, args) => {
     duration: ms(giveawayDuration),
     // The giveaway prize
     prize: giveawayPrize,
+    // The image For the embed link 
+
+    image: (image),
     // The giveaway winner count
     winnerCount: parseInt(giveawayNumberWinners),
     // Who hosts this giveaway

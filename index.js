@@ -60,7 +60,7 @@ client.on('message', async (message) => {
 })
 
 
-/*client.on('messageCreate', message => {     if (message.mentions.has(client.user)) {         message.channel.send('**To get started :** ```/help | g!help``` **To invite me :**```/invite```');     } });*/
+client.on('messageCreate', message => {     if (message.mentions.has(client.user)) {         message.channel.send('**To get started :** ```/help | g!help``` **To invite me :**```/invite```');     } });
                                                                                                          
                                                                                              
 
